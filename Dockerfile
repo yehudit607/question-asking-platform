@@ -5,6 +5,7 @@ FROM python:3.9
 ENV POSTGRES_USER=myuser
 ENV POSTGRES_PASSWORD=1234
 ENV POSTGRES_DB=mydb
+ENV DATABASE_URL=postgres://myuser:1234@postgres:5432/mydb
 
 # Set the working directory to /app
 WORKDIR /app
