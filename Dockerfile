@@ -23,4 +23,4 @@ COPY . /app/
 EXPOSE 8000
 
 # Start the Django development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:${PORT}"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:$PORT"]
