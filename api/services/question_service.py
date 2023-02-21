@@ -30,7 +30,7 @@ class QuestionService:
             )
             return JsonResponse(
 
-                data={"massage": f"question with this id not found. id: {question_id}"},
+                data={"message": f"question with this id not found. id: {question_id}"},
                 status=HTTPStatus.NOT_FOUND,
             )
 

@@ -1,6 +1,7 @@
 from django.urls import path
 
-from api.views import QuestionView, votes_view
+from api.views.questions_views import QuestionView
+from api.views.votes_views import votes_view
 
 urlpatterns = [
 

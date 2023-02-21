@@ -21,7 +21,7 @@ class VoteService:
                 f"answer with this id not found. id: {answer_id}"
             )
             return JsonResponse(
-                data={"massage": f"answer with this id not found. id: {answer_id}"},
+                data={"message": f"answer with this id not found. id: {answer_id}"},
                 status=HTTPStatus.NOT_FOUND,
             )
         answer.votes = F('votes') + 1
