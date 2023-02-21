@@ -23,4 +23,6 @@ COPY . /app/
 EXPOSE 8000
 
 # Start the Django development server
+RUN python manage.py createsuperuser --noinput
+
 ENTRYPOINT ["/bin/bash", "-c", "python manage.py runserver 0.0.0.0:${PORT}"]
