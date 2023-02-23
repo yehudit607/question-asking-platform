@@ -25,7 +25,7 @@ def question_exception(ex):
 
 
 def general_exception():
-    logger.error("Form builder general Exception, exception is:")
+    logger.error("question platform general Exception, exception is:")
     traceback.print_exc()
     return Response(
         status=HTTPStatus.INTERNAL_SERVER_ERROR,
